@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-custom-list [users]=data></app-custom-list>  
+
+
+  <ion-input [(ngModel)]="name" placeholder="Enter Name">Name:</ion-input>
+  <ion-button (click)="displayModal()">Click Me</ion-button>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Click image to display action sheet</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content (click)="presentActionSheet()">
+      <ion-img src="http://1.bp.blogspot.com/-Dh2wSBIoajQ/UTZZ6G6gaiI/AAAAAAAAA7s/rGtMZ403Z_c/s1600/b_clickme.jpeg">
+      </ion-img>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

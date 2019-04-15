@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Device motion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-label #label>Tilt the device towards you and away(y axis) to see the drawing animate</ion-label>
+  <canvas #myCanvas (devicemotion)="handleMotion($event)" (touchmove)="handleMove($event)"></canvas> 
+</ion-content>
